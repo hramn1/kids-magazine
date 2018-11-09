@@ -1,0 +1,22 @@
+.social{
+  margin: 10px 0;
+  margin-left: auto;
+  display: flex;
+  &__link{
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    display: block;
+    margin-right: 20px;
+    background-repeat: no-repeat;
+    &--vk{
+      background-image: url(../img/vk.svg);
+    }
+    &--inst{
+      background-image: url(../img/instagram.svg);
+    }
+    &--fb{
+      background-image: url(../img/facebook.svg);
+    }
+  }
+}

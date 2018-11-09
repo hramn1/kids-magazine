@@ -1,0 +1,59 @@
+{
+  "name": "kids",
+  "version": "1.0.0",
+  "private": true,
+  "description": "kids-magazine",
+  "devDependencies": {
+    "@htmlacademy/editorconfig-cli": "^1.0.0",
+    "autoprefixer": "^8.6.5",
+    "browser-sync": "^2.24.5",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-html-beautify": "^1.0.1",
+    "gulp-imagemin": "^4.1.0",
+    "gulp-inject": "^4.3.2",
+    "gulp-plumber": "^1.2.0",
+    "gulp-postcss": "^7.0.1",
+    "gulp-posthtml": "^3.0.4",
+    "gulp-rename": "^1.3.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-svgstore": "^6.1.1",
+    "gulp-uglify": "^3.0.0",
+    "imagemin-jpegoptim": "^5.2.0",
+    "imagemin-webp": "^4.1.0",
+    "pixel-glass": "^1.0.13",
+    "posthtml-include": "^1.2.0",
+    "run-sequence": "^2.2.1",
+    "stylelint": "9.2.x",
+    "stylelint-config-htmlacademy": "0.1.x"
+  },
+  "scripts": {
+    "editorconfig": "editorconfig-cli",
+    "stylelint": "stylelint \"source/sass/**/*.scss\" --syntax scss",
+    "test": "npm run editorconfig && npm run stylelint",
+    "build": "gulp build",
+    "start": "gulp dev && gulp serve"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ],
+  "editorconfig-cli": [
+    "*.json",
+    "*.js",
+    "source/*.html",
+    "source/js/**/*.js",
+    "source/img/**/*.svg",
+    "source/sass/**/*.sass"
+  ],
+  "engines": {
+    "node": "8.11"
+  },
+  "dependencies": {
+    "picturefill": "^3.0.2",
+    "popper.js": "^1.12.5",
+    "svg4everybody": "^2.1.9"
+  }
+}
