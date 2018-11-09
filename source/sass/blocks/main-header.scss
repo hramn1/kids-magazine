@@ -6,6 +6,14 @@
 }
 .main-menu{
   display: flex;
+  &__search{
+    margin: 10px 0;
+    padding: 5px 0 ;
+    & input {
+      border: 1px solid $black;
+      height: 20px;
+    }
+  }
 }
 .main-menu-items{
   padding: 0;
@@ -20,8 +28,28 @@
 }
 .top-row{
   display: flex;
-  padding-top: 20px;
+  padding: 20px 15px 10px;
   justify-content: space-between;
+  &__filter{
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    & a{
+      margin-right: 10px;
+      text-transform: capitalize;
+      font-size: 120%;
+    }
+  }
 }
-
-
+.filter__girl{
+  color: $girl-color;
+  &:hover{
+    color: darken($girl-color, 10%)
+  }
+}
+.filter__boy{
+  color: $boy-color;
+  &:hover{
+    color: darken($boy-color, 10%)
+  }
+}
