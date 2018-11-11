@@ -72,11 +72,19 @@ gulp.task("copy:html", function () {
   var sprite = gulp.src("build/img/sprite.svg");
   return gulp.src([
     "source/*.html",
-    "css/**"
   ], {
     base: "source"
   })
     .pipe(inject(sprite, {transform: fileContents}))
+    .pipe(gulp.dest(paths.build.root))
+});
+
+gulp.task("copy:css", function () {
+  return gulp.src([
+    "source/css/*",
+  ], {
+    base: "source"
+  })
     .pipe(gulp.dest(paths.build.root))
 });
 
@@ -207,6 +215,7 @@ gulp.task("dev", function (done) {
     "create:svg-sprite",
     "copy:data",
     "copy:html",
+    "copy:css",
     "style:sass",
     "script:js",
     done
@@ -222,6 +231,7 @@ gulp.task("build", function (done) {
     "create:webp",
     "copy:data",
     "copy:html",
+    "copy:css",
     "style:sass",
     "script:js",
     done

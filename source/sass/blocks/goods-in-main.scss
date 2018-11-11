@@ -1,3 +1,9 @@
 .goods-in-main{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  &__items{
+    margin: 10px 20px;
+    text-align: center;
+  }
 }

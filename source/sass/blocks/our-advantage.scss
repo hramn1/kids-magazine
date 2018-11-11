@@ -1,0 +1,10 @@
+.our-advantage{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  border-top: 1px solid $black;
+  border-bottom: 1px solid $black;
+  &__item{
+    flex-basis: 20%;
+  }
+}

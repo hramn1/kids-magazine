@@ -474,6 +474,9 @@ template {
 [hidden] {
   display: none; }
 
+.main-head {
+  position: relative; }
+
 .top-menu {
   padding: 0 10px;
   background-color: #fafafa;
@@ -555,7 +558,15 @@ template {
 .goods-in-main {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .goods-in-main__items {
+    margin: 10px 20px;
+    text-align: center; }
 
 .btn {
   padding: 5px 10px; }
@@ -566,3 +577,14 @@ template {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     padding: 4px 10px; }
+
+.our-advantage {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-top: 1px solid #232323;
+  border-bottom: 1px solid #232323; }
+  .our-advantage__item {
+    -ms-flex-preferred-size: 20%;
+        flex-basis: 20%; }
