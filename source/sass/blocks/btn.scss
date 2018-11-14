@@ -2,7 +2,8 @@
   padding: 5px 10px;
   &--search{
     background-color: $boy-color;
-    border-radius:  5px;
+    border-top-right-radius:  5px;
+    border-bottom-right-radius:  5px;
     color: $white;
     box-sizing: border-box;
     padding: 4px 10px;

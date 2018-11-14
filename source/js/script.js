@@ -1,9 +1,8 @@
 'use strict';
-<script>
   var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    slidesPerGroup: 3,
+    slidesPerView: 10,
+    spaceBetween: 0,
+    slidesPerGroup: 10,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -15,4 +14,3 @@
       prevEl: '.swiper-button-prev',
     },
   });
-</script>
