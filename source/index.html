@@ -92,7 +92,7 @@
     <h2 class="favorites-slider__title">
       Рекомендуем
     </h2>
-    <div class="swiper-container">
+    <div class="swiper-container swiper-container--favorites">
   <div class="swiper-wrapper">
     <div class="swiper-slide"><img src="img/new-img.jpeg" alt=""></div>
     <div class="swiper-slide"><img src="img/new-img.jpeg" alt=""></div>
@@ -126,13 +126,46 @@ It is a long established fact that a reader will be distracted by the readable c
 </p>
   </section>
   <section class="subscribe">
-    <input type="email" name="" value="">
+    <h3 class="subscribe__title">Скидка 10% за подписку на наши новости</h3>
+    <form action="#" class="subscribe-form">
+    <input type="email" name="" value="" placeholder="Ввуедите ваш e-mail">
+    <button class="btn btn--subscribe">Подписаться</button>
+    </form>
   </section>
+    <section class="brand-catalog">
+      <div class="swiper-container swiper-container--brands">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="img/addidas.jpg" alt=""></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
   </div>
 </main>
 <footer class="main-footer">
   <div class="container">
-
+    <nav class="footer-menu">
+      <a href="#" class="footer-menu__link">личный кабинет</a>
+      <a href="#" class="footer-menu__link">доставка</a>
+      <a href="#" class="footer-menu__link">выбрать размер</a>
+      <a href="#" class="footer-menu__link">условия доставки</a>
+    </nav>
+    <div class="payment-method">
+      
+    </div>
   </div>
 </footer>
 <script src="js/swiper.min.js"></script>
