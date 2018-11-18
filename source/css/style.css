@@ -681,6 +681,13 @@ template {
   .footer-menu__link {
     padding: 10px; }
 
+.payment-method {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+  .payment-method__link {
+    width: 50px;
+    display: inline-block; }
+
 .favorites-slider {
   padding: 45px 0 35px; }
   .favorites-slider__title {
