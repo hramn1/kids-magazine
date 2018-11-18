@@ -636,34 +636,61 @@ template {
   display: -ms-flexbox;
   display: flex;
   border-top: 1px solid #232323;
-  border-bottom: 1px solid #232323; }
+  border-bottom: 1px solid #232323;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 30px 0 35px; }
   .our-advantage__item {
     -ms-flex-preferred-size: 20%;
-        flex-basis: 20%; }
+        flex-basis: 20%;
+    text-align: center; }
 
 .subscribe {
   border-top: 1px solid #292929;
   border-bottom: 1px solid #292929;
-  padding: 20px 0 30px; }
+  padding: 35px 0 30px;
+  text-align: center; }
+
+.subscribe-form input {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 45px;
+  width: 300px; }
+
+.container--footer {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 .main-footer {
-  padding: 20px 0 30px;
-  background-color: #fafafa; }
+  padding: 15px 0 20px;
+  color: #fafafa; }
+
+.footer-menu {
+  display: -ms-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 60px 0 20px; }
+  .footer-menu__link {
+    padding: 10px; }
 
 .favorites-slider {
-  padding: 20px 0; }
+  padding: 45px 0 35px; }
   .favorites-slider__title {
     margin: 20px 0 30px;
-    position: relative; }
-    .favorites-slider__title::before {
-      position: absolute;
-      content: "";
-      display: block;
-      width: 100%;
-      height: 1px;
-      background-color: #232323;
-      bottom: 10px; }
-  .favorites-slider span {
-    padding-right: 20px;
     position: relative;
-    background-color: #fdfdfd; }
+    text-align: center; }
+    .favorites-slider__title span {
+      padding-right: 20px;
+      position: relative;
+      background-color: #fdfdfd; }
+
+.our-online-store {
+  padding: 30px 0; }

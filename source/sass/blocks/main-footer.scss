@@ -1,4 +1,19 @@
+.container--footer{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+}
 .main-footer{
-  padding: 20px 0 30px;
-  background-color: #fafafa;
+  padding: 15px 0 20px;
+  color: #fafafa;
+}
+.footer-menu{
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: column;
+  padding: 0 60px 0 20px;
+  &__link{
+    padding: 10px;
+  }
 }
