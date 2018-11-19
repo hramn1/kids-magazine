@@ -1,0 +1,32 @@
+.catalog-wrapper{
+  display: flex;
+  flex-wrap: wrap;
+  &__title{
+    border-bottom: 2px solid $black;
+    flex-basis: 100%;
+    padding: 10px 0;
+    text-transform: capitalize;
+  }
+}
+.left-sidebar{
+  display: flex;
+  flex-basis: 30%;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  &__link{
+    margin-right: auto;
+    width: 100%;
+  }
+}
+.catalog-items{
+  display: flex;
+  flex-basis: 70%;
+  flex-wrap: wrap;
+}
+.catalog-filter{
+  display: flex;
+}
+.catalog-goods{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}

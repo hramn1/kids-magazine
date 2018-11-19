@@ -2,7 +2,7 @@
   var swiperFavorites = new Swiper('.swiper-container--favorites', {
     slidesPerView: 10,
     spaceBetween: 0,
-    slidesPerGroup: 10,
+    slidesPerGroup: 1,
     loop: true,
     loopFillGroupWithBlank: true,
     pagination: {
@@ -17,7 +17,7 @@
 var swiperBrands = new Swiper('.swiper-container--brands', {
   slidesPerView: 7,
   spaceBetween: 10,
-  slidesPerGroup: 7,
+  slidesPerGroup: 1,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {

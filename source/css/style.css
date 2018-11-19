@@ -701,3 +701,54 @@ template {
 
 .our-online-store {
   padding: 30px 0; }
+
+.brand-catalog {
+  padding: 30px 0 25px; }
+
+.main--catalog {
+  padding: 20px 30px; }
+
+.catalog-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .catalog-wrapper__title {
+    border-bottom: 2px solid #232323;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    padding: 10px 0;
+    text-transform: capitalize; }
+
+.left-sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-item-align: start;
+      align-self: flex-start; }
+  .left-sidebar__link {
+    margin-right: auto;
+    width: 100%; }
+
+.catalog-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 70%;
+      flex-basis: 70%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.catalog-filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.catalog-goods {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
