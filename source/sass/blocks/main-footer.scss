@@ -2,10 +2,11 @@
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
+  justify-content: space-between;
 }
 .main-footer{
-  padding: 15px 0 20px;
-  color: #fafafa;
+  padding: 25px 0 20px;
+  background-color:  #f3f3f3;
 }
 .footer-menu{
   display: -webkit-flex;
@@ -14,11 +15,24 @@
   flex-direction: column;
   padding: 0 60px 0 20px;
   &__link{
-    padding: 10px;
+    padding: 10px 10px 10px 35px;
+    position: relative;
+    &::before{
+      position: absolute;
+      display: inline-block;
+      content: "";
+      top: 13px;
+      left: 4px;
+      width: 20px;
+      height: 18px;
+      background-image: url(../img/star.svg);
+    }
   }
 }
 .payment-method{
-  flex-basis: 50%;
+  flex-basis: 30%;
+  text-align: center;
+  text-transform: capitalize;
   &__link{
     width: 50px;
     display: inline-block;

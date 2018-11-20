@@ -10,19 +10,43 @@
 }
 .main-menu{
   display: flex;
+  &__link{
+    position: relative;
+  }
   &__search{
     margin: 10px 0;
     padding: 5px 0 ;
     & input {
       border: 1px solid $black;
-      height: 22px;
+      height: 26px;
       width: 260px;
+      box-sizing: border-box;
       background-image: url(../img/search.svg);
       background-repeat: no-repeat;
       background-position: 5px 4px;
       background-size: 6%;
       padding-left: 30px;
     }
+  }
+}
+.menu-dropdown{
+   display: none;
+  position: absolute;
+  background-color: #fafafa;
+  width: 100%;
+  left: 0;
+top: 110px;
+box-shadow: 0 2px 3px 1px #232323;
+}
+
+.dropdown-list{
+  list-style: none;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  padding: 20px 30px;
+  &__item{
+    margin: 10px 15px;
   }
 }
 .main-menu-items{

@@ -1,5 +1,6 @@
 .btn{
   padding: 5px 10px;
+  cursor: pointer;
   &--search{
     background-color: $boy-color;
     border-top-right-radius:  5px;
@@ -7,7 +8,18 @@
     color: $white;
     box-sizing: border-box;
     padding: 4px 10px;
-    height: 22px;
+    height: 26px;
+    box-sizing: border-box;
     margin-left: -1px;
+  }
+  &--subscribe{
+    height: 45px;
+    background-color: $boy-color;
+    border: 0;
+    color: $white;
+    border-radius: 14px;
+    padding: 5px 20px;
+    text-transform: uppercase;
+
   }
 }
