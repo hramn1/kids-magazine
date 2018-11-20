@@ -29,3 +29,23 @@ var swiperBrands = new Swiper('.swiper-container--brands', {
     prevEl: '.swiper-button-prev',
   },
 });
+let menuLink = document.querySelector('.main-menu-items__item');
+  if(menuLink.lastElementChild.className  =='menu-dropdown'){
+  let dropdown = menuLink.querySelector('.menu-dropdown');
+    delayShow(menuLink, function() {
+      dropdown.style.display = 'block';
+  });
+}
+
+
+function delayShow (elem, callback) {
+var timeout = null;
+elem.onmouseover = function() {
+    // Set timeout to be a timer which will invoke callback after 1s
+    timeout = setTimeout(callback, 200);
+};
+   elem.onmouseout = function() {
+    // Clear any timers set to timeout
+    clearTimeout(timeout);
+};
+}
