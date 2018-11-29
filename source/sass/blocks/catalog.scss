@@ -1,6 +1,7 @@
 .catalog-wrapper{
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
   &__title{
     border-bottom: 2px solid $black;
     flex-basis: 100%;
@@ -10,18 +11,22 @@
 }
 .left-sidebar{
   display: flex;
-  flex-basis: 30%;
+  flex-basis: 15%;
   flex-wrap: wrap;
   align-self: flex-start;
+  padding: 10px 15px 20px 10px;
   &__link{
     margin-right: auto;
     width: 100%;
+    padding: 10px 5px ;
+    border-bottom: 1px solid #dddddd;
   }
 }
 .catalog-items{
   display: flex;
-  flex-basis: 70%;
+  flex-basis: 81%;
   flex-wrap: wrap;
+  padding: 10px 15px 20px 10px;
 }
 .catalog-filter{
   display: flex;
@@ -29,4 +34,24 @@
 .catalog-goods{
   display: grid;
   grid-template-columns: repeat(4,1fr);
+}
+.breadcrumbs{
+  padding: 10px;
+  &__item{
+    &::after{
+      content: '/';
+      display: inline-block;
+      color: $black;
+      margin: 0 10px;
+    }
+  }
+}
+.breadcrumbs__item:last-child{
+  color: #dddddd;
+  &::after{
+    display: none;
+  }
+}
+.catalog-filter{
+
 }
